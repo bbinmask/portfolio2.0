@@ -22,7 +22,7 @@ const funnel = Funnel_Display({
 
 export const metadata: Metadata = {
   title: "Irfan's Portfolio",
-  description: "Built by Next.js",
+  description: "Irfanul Madar's personal Portfolio",
   icons: {
     icon: "./logo.svg",
   },

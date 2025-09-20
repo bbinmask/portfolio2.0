@@ -2,7 +2,6 @@
 
 import React from "react";
 import { WobbleCard } from "./wobble-card";
-import "./css/profile-card.css";
 export function Card() {
   return (
     <div className="relative">
