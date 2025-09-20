@@ -9,7 +9,7 @@ import Projects from "@/sections/Projects";
 import Contact from "@/sections/Contact";
 import Journey from "@/components/Journey";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className="container mx-auto max-w-7xl">
       <Navbar />
