@@ -15,7 +15,7 @@ export interface ProjectProps {
 
 export interface ExperienceProps {
   title: string;
-  job: string;
+  subTitle: string;
   date: string;
   contents: string[];
 }

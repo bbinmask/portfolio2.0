@@ -17,8 +17,8 @@ const About = () => {
             className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
           />
           <div className="z-10">
-            <p className="headtext">Hi, I'm Irfanul Madar</p>
-            <p className="subtext">
+            <h1 className="headtext font-[cal_sans]">Hi, I'm Irfanul Madar</h1>
+            <p className="subtext font-[poppins]">
               Over the last 2 years, I developed my frontend and backend dev
               skills to deliver dynamic web applications.
             </p>
@@ -35,39 +35,54 @@ const About = () => {
               CODE IS CRAFT
             </p>
             <Card
-              style={{ rotate: "5deg", top: "30%", left: "20%" }}
+              style={{ rotate: "-15deg", top: "10%", left: "20%" }}
               text="Creative"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "-10deg", top: "60%", left: "45%" }}
+              style={{ rotate: "15deg", top: "60%", left: "25%" }}
               text="SOLID"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "-5deg", bottom: "30%", left: "70%" }}
+              style={{ rotate: "-35deg", bottom: "35%", left: "70%" }}
               text="MERN Stack"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "15deg", top: "55%", left: "0%" }}
+              style={{ rotate: "90deg", top: "55%", right: "75%" }}
               text="Problem Solving"
               containerRef={grid2Container}
             />
 
             <Card
-              style={{ rotate: "-15deg", top: "80%", left: "90%" }}
-              image="typescript.png"
+              style={{ rotate: "-15deg", top: "75%", left: "85%" }}
+              image="./assets/logos/typescript.svg"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "-20deg", top: "70%", left: "25%" }}
-              image="react.png"
+              style={{ rotate: "-20deg", top: "70%", left: "15%" }}
+              image="./assets/logos/react.svg"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "20deg", top: "15%", left: "5%" }}
-              image="mongodb.png"
+              style={{ rotate: "20deg", top: "10%", left: "85%" }}
+              image="./assets/logos/tailwindcss.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "20deg", bottom: "0%", left: "50%" }}
+              image="./assets/logos/nextjs.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "20deg", top: "5%", left: "5%" }}
+              image="./assets/logos/python.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "0deg", top: "15%", left: "35%" }}
+              image="./assets/logos/java.svg"
               containerRef={grid2Container}
             />
           </div>
@@ -87,7 +102,7 @@ const About = () => {
         {/* Grid 4 */}
         <div className="grid-special-color grid-4">
           <div className="flex flex-col items-center justify-center gap-4 size-full">
-            <p className="text-center headtext">
+            <p className="text-center headtext font-[cal_sans] font-medium tracking-wide">
               Do you want to start a project together?
             </p>
             <CopyEmailButton />
@@ -96,8 +111,10 @@ const About = () => {
         {/* Grid 5 */}
         <div className="grid-default-color grid-5">
           <div className="z-10 w-[50%]">
-            <p className="headText">Teck Stack</p>
-            <p className="subtext">
+            <h3 className="headText font-[cal_sans] tracking-wide text-lg">
+              Teck Stack
+            </h3>
+            <p className="subtext font-[poppins]">
               I am specialize in a JavaScript, frameworks like React that allow
               me to build robust and scalable applications.
             </p>

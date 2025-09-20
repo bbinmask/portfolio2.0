@@ -6,8 +6,8 @@ import Footer from "@/sections/Footer";
 import Hero from "@/sections/Hero";
 import Navbar from "@/sections/Navbar";
 import Projects from "@/sections/Projects";
-import Testimonial from "@/sections/Testimonial";
 import Contact from "@/sections/Contact";
+import Journey from "@/components/Journey";
 
 export default function Home() {
   return (
@@ -16,8 +16,8 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
+      <Journey />
       <Experiences />
-      <Testimonial />
       <Contact />
       <Footer />
     </div>

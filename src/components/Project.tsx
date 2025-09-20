@@ -1,6 +1,7 @@
 import React, { Dispatch, SetStateAction, useState } from "react";
 import ProjectDetails from "./ProjectDetails";
 import { ProjectProps } from "@/types";
+import { ArrowRight } from "lucide-react";
 
 interface IProject extends ProjectProps {
   setPreview: Dispatch<SetStateAction<null | string>>;
@@ -15,7 +16,7 @@ const Project = ({
   tags,
   setPreview,
 }: IProject) => {
-  const [isHidden, setIsHidden] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <div
@@ -32,15 +33,15 @@ const Project = ({
           </div>
         </div>
         <button
-          onClick={() => setIsHidden(true)}
+          onClick={() => setIsModalOpen(true)}
           className="flex items-center gap-1 cursor-pointer hover-animation"
         >
           Read More
-          <img src="assets/arrow-right.svg" className="w-5" />
+          <ArrowRight className="w-5" />
         </button>
       </div>
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
-      {isHidden && (
+      {isModalOpen && (
         <ProjectDetails
           title={title}
           description={description}
@@ -48,7 +49,7 @@ const Project = ({
           image={image}
           tags={tags}
           href={href}
-          closeModal={() => setIsHidden(false)}
+          closeModal={() => setIsModalOpen(false)}
         />
       )}
     </>

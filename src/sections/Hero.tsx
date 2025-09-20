@@ -3,6 +3,7 @@ import MagicButton from "../components/ui/magic-button";
 import { Spotlight } from "../components/ui/spotlight";
 import { LocationEdit } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { Card } from "@/components/ui/card";
 
 const Hero = () => {
   const router = useRouter();
@@ -29,7 +30,9 @@ const Hero = () => {
               alt="Banner"
               className="shadow-lg w-32 h-32 sm:w-48 sm:h-48 object-cover"
             /> */}
-            <ProfileCard
+
+            <Card />
+            {/* <ProfileCard
               name="Irfanul Madar"
               title="Software Engineer"
               handle="bbinmask"
@@ -40,12 +43,14 @@ const Hero = () => {
               enableTilt={true}
               enableMobileTilt={false}
               onContactClick={() => router.push("#contact")}
-            />
+            /> */}
           </div>
 
           <div className="text-center sm:text-left sm:w-2/3">
-            <span className="text-xl lg:text-2xl">I'm</span>
-            <h1 className=" animate-fade-in-up text-indigo-600 font-[cal_sans] sm:text-3xl md:text-4xl text-2xl font-semibold">
+            <span className="text-3xl text-left lg:text-4xl font-[urbanist] font-bold">
+              I'm
+            </span>
+            <h1 className=" animate-fade-in-up text-lavender font-[cal_sans] sm:text-4xl md:text-5xl lg:text-6xl text-3xl font-semibold">
               Irfanul Madar
             </h1>
             <span className="text-2xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-up">
@@ -58,14 +63,14 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row sm:justify-start justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <a
-                href="#portfolio"
-                className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105 animate-fade-in-up delay-200"
+                href="#projects"
+                className="inline-block font-[funnel_display] bg-indigo-600 hover:bg-indigo-700 text-white font-black tracking-wide py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105"
               >
                 View My Work
               </a>
               <a
                 href="#contact"
-                className="inline-block bg-gray-700 hover:bg-gray-600 text-gray-200 font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105 animate-fade-in-up delay-300"
+                className="inline-block font-[funnel_display] bg-gray-700 hover:bg-gray-600 text-gray-200 font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105 "
               >
                 Get In Touch
               </a>
@@ -73,11 +78,7 @@ const Hero = () => {
           </div>
         </div>
         <a href="#about" className="mx-auto pt-4">
-          <MagicButton
-            icon={<LocationEdit />}
-            title="Show my work"
-            position="right"
-          />
+          <MagicButton title="Show my work" position="right" />
         </a>
       </div>
     </section>
