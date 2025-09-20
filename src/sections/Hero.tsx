@@ -1,15 +1,13 @@
-import ProfileCard from "@/components/ui/profile-card";
-import MagicButton from "../components/ui/magic-button";
 import { Spotlight } from "../components/ui/spotlight";
-import { LocationEdit } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { Card } from "@/components/ui/card";
+import HeroText from "@/components/HeroText";
 
 const Hero = () => {
   const router = useRouter();
 
   return (
-    <section className="pb-10 pt-36 px-4">
+    <section className="pt-36 px-4" id="home">
       <div className="">
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -23,63 +21,30 @@ const Hero = () => {
       </div>
 
       <div className="w-full grid justify-center">
-        <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center max-w-5xl mx-auto sm:space-x-12">
+        <div className="relative z-10 flex flex-col sm:flex-row items-start justify-center max-w-5xl mx-auto sm:space-x-12">
           <div className="mb-8 sm:mb-0 sm:w-1/3 flex justify-center">
-            {/* <img
-              src="/profile.png"
-              alt="Banner"
-              className="shadow-lg w-32 h-32 sm:w-48 sm:h-48 object-cover"
-            /> */}
-
             <Card />
-            {/* <ProfileCard
-              name="Irfanul Madar"
-              title="Software Engineer"
-              handle="bbinmask"
-              status="Online"
-              contactText="Contact Me"
-              avatarUrl="/profile.png"
-              showUserInfo={true}
-              enableTilt={true}
-              enableMobileTilt={false}
-              onContactClick={() => router.push("#contact")}
-            /> */}
           </div>
 
           <div className="text-center sm:text-left sm:w-2/3">
-            <span className="text-3xl text-left lg:text-4xl font-[urbanist] font-bold">
-              I'm
-            </span>
-            <h1 className=" animate-fade-in-up text-lavender font-[cal_sans] sm:text-4xl md:text-5xl lg:text-6xl text-3xl font-semibold">
-              Irfanul Madar
-            </h1>
-            <span className="text-2xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-up">
-              MERN Stack Developer
-            </span>
-
-            <p className="text-lg sm:text-xl md:text-2xl font-[urbanist] mb-8">
-              A passionate Web Developer crafting engaging digital experiences.
-            </p>
+            <HeroText />
 
             <div className="flex flex-col sm:flex-row sm:justify-start justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <a
                 href="#projects"
-                className="inline-block font-[funnel_display] bg-indigo-600 hover:bg-indigo-700 text-white font-black tracking-wide py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105"
+                className="inline-block  bg-indigo-600 hover:bg-indigo-700 text-white font-black tracking-wide py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105"
               >
                 View My Work
               </a>
               <a
                 href="#contact"
-                className="inline-block font-[funnel_display] bg-gray-700 hover:bg-gray-600 text-gray-200 font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105 "
+                className="inline-block  bg-gray-700 hover:bg-gray-600 text-gray-200 font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105 "
               >
                 Get In Touch
               </a>
             </div>
           </div>
         </div>
-        <a href="#about" className="mx-auto pt-4">
-          <MagicButton title="Show my work" position="right" />
-        </a>
       </div>
     </section>
   );
