@@ -3,43 +3,6 @@ import { ProjectProps } from "@/types";
 export const myProjects: ProjectProps[] = [
   {
     id: 1,
-    title: "Taskify",
-    description:
-      "A Kanban board task management application with DND features.",
-    subDescription: [
-      "Built a scalable application with NextJS, TailwindCSS, React-Query.",
-      "Implemented secure authentication using clerk and database management using Prisma.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
-    ],
-    href: "https://board-taskify.vercel.app/",
-    logo: "https://board-taskify.vercel.app/logo.svg",
-    image: "/assets/projects/taskify.png",
-    tags: [
-      {
-        id: 1,
-        name: "Tailwind",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-      {
-        id: 2,
-        name: "JavaScript",
-        path: "/assets/logos/javascript.svg",
-      },
-      {
-        id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
-      },
-      {
-        id: 4,
-        name: "React",
-        path: "/assets/logos/react.svg",
-      },
-    ],
-  },
-  {
-    id: 2,
     title: "Score Board System",
     description: "A cricket Score-Board web application.",
     subDescription: [
@@ -59,8 +22,8 @@ export const myProjects: ProjectProps[] = [
       },
       {
         id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
+        name: "NEXT",
+        path: "/assets/logos/nextjs.svg",
       },
       {
         id: 3,
@@ -75,7 +38,7 @@ export const myProjects: ProjectProps[] = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     title: "Medicare Web App",
     description:
       "A modern, interactive, hospital management web application built with MERN Core.",
@@ -108,6 +71,43 @@ export const myProjects: ProjectProps[] = [
         id: 4,
         name: "HTML5",
         path: "/assets/logos/html5.svg",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Taskify",
+    description:
+      "A Kanban board task management application with DND features.",
+    subDescription: [
+      "Built a scalable application with NextJS, TailwindCSS, React-Query.",
+      "Implemented secure authentication using clerk and database management using Prisma.",
+      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
+      "Added payment systems, localization, and product filtering for functionality improvements.",
+    ],
+    href: "https://board-taskify.vercel.app/",
+    logo: "https://board-taskify.vercel.app/logo.svg",
+    image: "/assets/projects/taskify.png",
+    tags: [
+      {
+        id: 1,
+        name: "Tailwind",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 2,
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
+      },
+      {
+        id: 3,
+        name: "Stripe",
+        path: "/assets/logos/stripe.svg",
+      },
+      {
+        id: 4,
+        name: "React",
+        path: "/assets/logos/react.svg",
       },
     ],
   },
