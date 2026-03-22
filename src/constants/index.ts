@@ -48,7 +48,7 @@ export const myProjects: ProjectProps[] = [
       "Developed a Next frontend with Tailwind CSS for a sleek user experience.",
       "Connected to a secure MongoDB database for user data storage.",
     ],
-    href: "",
+    href: "scordo.vercel.app",
     logo: "",
     image: "/assets/projects/score-board.png",
     tags: [
@@ -85,7 +85,7 @@ export const myProjects: ProjectProps[] = [
       "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
       "Integrated MongoDB for efficient client-side database storage.",
     ],
-    href: "",
+    href: "medicare-irfan.vercel.app",
     logo: "",
     image: "/assets/projects/hospital-management.png",
     tags: [
