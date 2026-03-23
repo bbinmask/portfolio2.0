@@ -23,6 +23,7 @@ const Project = ({
         className="flex-wrap font-[poppins] items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0"
         onMouseEnter={() => setPreview(image)}
         onMouseLeave={() => setPreview(null)}
+        onClick={() => setIsModalOpen(true)}
       >
         <div>
           <p className="text-2xl font-bold">{title}</p>
