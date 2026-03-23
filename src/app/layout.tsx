@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Funnel_Display, Poppins, Urbanist } from "next/font/google";
+import { Funnel_Display, Cal_Sans, Poppins, Urbanist } from "next/font/google";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -9,6 +9,10 @@ const urbanist = Urbanist({
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
+});
+const calSans = Cal_Sans({
+  subsets: ["latin"],
+  weight: ["400"],
 });
 const funnel = Funnel_Display({
   subsets: ["latin"],
@@ -31,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${funnel.className} ${urbanist.className} ${poppins.className} antialiased`}
+        className={`${funnel.className} ${calSans.className} ${urbanist.className} ${poppins.className} antialiased`}
       >
         {children}
       </body>
