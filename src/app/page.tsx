@@ -44,7 +44,7 @@ export default function HomePage() {
       <Footer />
 
       {showScroll && (
-        <Button className="fixed bottom-20 right-10 w-12 h-12">
+        <Button className="fixed bottom-10 right-10 w-12 h-12">
           <Link href={"#home"}>
             <ArrowUp />
           </Link>

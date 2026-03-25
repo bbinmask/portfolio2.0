@@ -8,18 +8,6 @@ const Hero = () => {
 
   return (
     <section className="pt-36 px-4" id="home">
-      <div className="">
-        <Spotlight
-          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-          fill="white"
-        />
-        <Spotlight
-          className="top-10 left-full h-[80vh] w-[50vw]"
-          fill="purple"
-        />
-        <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
-      </div>
-
       <div className="w-full grid justify-center">
         <div className="relative z-10 flex flex-col sm:flex-row items-start justify-center max-w-5xl mx-auto sm:space-x-12">
           <div className="mb-8 sm:mb-0 sm:w-1/3 flex justify-center">
