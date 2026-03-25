@@ -7,6 +7,8 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "motion/react";
+import Image from "next/image";
+import Link from "next/link";
 
 import React, { useRef, useState } from "react";
 
@@ -231,17 +233,19 @@ export const MobileNavToggle = ({
 
 export const NavbarLogo = () => {
   return (
-    <a
+    <Link
       href="https://x.com/bbinmask"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
-      <img
+      <Image
+        width={28}
+        height={28}
         src="/profile.png"
         alt="logo"
         className="w-7 h-7 rounded-full object-cover"
       />
-      {/* <div className="absolute w-6 h-6 bg-white -z-50 left-4" /> */}
+      <div className="absolute w-6 h-6 bg-white -z-50 left-4" />
       <span className="font-medium text-black dark:text-white">Irfan</span>
-    </a>
+    </Link>
   );
 };
