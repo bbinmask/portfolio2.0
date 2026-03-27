@@ -1,6 +1,7 @@
 import { ProjectProps } from "@/types";
 import { Ban, ExternalLink, X } from "lucide-react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 interface ProjectDetailsProps extends ProjectProps {
   closeModal?: () => void;
@@ -53,12 +54,13 @@ const ProjectDetails = ({
               ))}
             </div>
             {href ? (
-              <a
+              <Link
+                target="_blank"
                 href={href}
                 className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
               >
                 View Project <ExternalLink className="size-4" />
-              </a>
+              </Link>
             ) : (
               <button className="inline-flex items-center gap-1 font-medium cursor-not-allowed hover-animation">
                 Not Available
