@@ -244,8 +244,7 @@ export const NavbarLogo = () => {
         alt="logo"
         className="w-7 h-7 rounded-full object-cover"
       />
-      <div className="absolute w-6 h-6 bg-white -z-50 left-4" />
-      <span className="font-medium text-black dark:text-white">Irfan</span>
+      <span className="font-medium text-black dark:text-white">Portfolio</span>
     </Link>
   );
 };
